@@ -1,189 +1,297 @@
-body {
-  margin: 0;
-  min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-  color: #f2f2f2;
-  background-color: #080208;
-  background-image: url("img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+*{
+	margin: 0;
+	padding: 0;
+
 }
 
-.container {
-  max-width: 928px;
-  margin: 0 auto;
-  padding: 0 16px;
+ul{
+	list-style: none;
 }
 
-.page-header {
-  margin: 0 0 180px;
-  padding: 32px 0 32px;
+a{
+	text-decoration: none;
 }
 
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
-  text-align: right;
+body{
+	font: 13px "Georgia", sans-serif ;
+	padding: 40px 0 10px 10px;
+	background: black;
+	width: 1390px;
+	margin: 0 auto;
 }
 
-.page-header a {
-  margin-left: 56px;
-  color: #fea18d;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
+
+                                                        /*header*/
+
+
+
+header{
+background: #fff;
+height: 110px;
+padding: 15px;
+border-radius: 7px 7px 0 0;
 }
 
-.header-email {
+                                                        /*логотип*/
+header h1{
+	float: left;
+	margin: 20px 0px 0 30px;
+	width: 10px;
+}  
+
+                                                         /*Меню*/
+nav{
+	float: right;
+	clear: right;
+background:  #e2494b ;
+padding: 30px 0px 30px 25px;
+border-radius: 10px;
+margin-top: 80px;
+}
+
+nav li{
+	float: right;
+	margin: 10px 20px 3px 15px; 
+	padding: 0 50px 0 0;
+	font-size: 16px; 
+}
+
+nav li a{
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+
+nav li a:hover{
+	color: #ee9395;
+}
+                                                          /*Цитата*/
+.citata{
+background: #fff;
+padding: 150px 200px 60px 200px ;
+font: 28px "Georgia", sans-serif  ;
+text-align: center;
+color: #4d4d4d;
+font-style: italic;
+}
+                                                     /*Тело*/
+.telo{
+	background: #fff;
+height: 1310px;
+}
+                                                      /*Слайдер*/
+.slid{
+	width: 1340px;
+	height: 520px;
+padding: 0 25px 20px 25px; 
+background: #fff;
+}
+                                                       /* Кружочки */
+.slider-dots {
+    text-align: center;
+    background: #fff;
+}
+
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #cecece;
+    border-radius: 50%;
+    display: inline-block;
+     margin-bottom: 10px;
+   }
+
+.blockname{
+	float: center;
+	background: #e2494b;
+	padding: 5px 20px 5px 20px;
+	border-radius: 10px;
+	margin: 0 570px 0px 570px;
+}
+                                                  /*заголовки*/
+h3{
+	color: #fff;
+	padding: 5px 20px 5px 20px;
+text-transform: uppercase;
+font-size: 18px;
+
+
+}
+                                        /*our services*/
+
+.blog{
+	
+	float: right;
+padding: 25px 0px 20px 0px;
+font-size: 15px;
+}
+
+.blog3{
+	float: right;
+	width: 200px;
+	height: 350px;
+	padding: 10px 185px 20px 10px;
+	display: block;
+
+}
+
+ .zagol {
+	color: #666666;
+}
+
+.blog1{
+	margin: 25px 0px 0px -40px;
+	color: #979797;
+	font: 20px "Georgia", sans-serif ;
+}	
+                                        /*our players*/
+.telo2{
+	background: #fff;
+height: 420px;
+padding: 20px 0 0px 0;
+
+}
+
+
+section{
+	float: right;
+padding: 10px 10px 10px 10px;
+
+
+}
+
+section li{
+    float: right;
+	margin: 50px 30px 100px 5px; 
+	width: 151px;
+	padding: 10px 75px 0 2px;
+	color: #666666;
+font: 18px "Georgia", sans-serif ;
+	height: 200px;]
+
+}
+.profile{
+	color: #e2494b;
+}
+}
+.names{
+	font-weight: bold;
+	color: #979797;
+
+}
+section img{
+	margin-bottom: 20px;
+}
+                                             /*latest work*/
+.telo3{
+	background: #fff;
+	height: 300px;
+	padding: 20px 0 0 0;
+}
+
+.latest{
+	padding: 55px 0px 0 40px;
+display: block;
+vertical-align: baseline;
+}
+.latest img{
+	padding: 0 140px 0 0;
+}
+
+                                        /*подвал*/
+.foter{
+		background: #e2e2e2;
+height: 450px;
+padding: 20px 0 0px 0;
+
+}
+footer {
+  display: flex;
   padding-left: 30px;
-  background-image: url("img/icon-email.svg");
+  padding-right: 30px;
+  position: relative;
+}
+footer > div {
+  width: 225px;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer > div > span:nth-child(2) {
+  font-size: 12px;
+	font: 16px "Georgia", sans-serif ;
+  color: #999999;
+  line-height: 1.6;
 }
 
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
-}
 
-.hero-image {
-  margin-bottom: 480px;
+.title_footer {
+  font-size: 18px;
+	font: 16px "Georgia", sans-serif ;
+ 
+  color: #333333;
+  line-height: 1.2;
+  margin-top: 50px;
+  display: block;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  font-weight: bold;
 }
-
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
-}
-
-.heading {
-  margin: 0 0 24px;
-  font-size: 80px;
-  line-height: 96px;
-}
-
-.hero-image p {
-  margin: 0;
-  font-size: 32px;
-  line-height: 48px;
-}
-
-.intro {
-  margin: 0 0 120px;
-}
-
-.subheading {
-  margin: 0 0 56px;
-  font-size: 56px;
-  line-height: 80px;
-  text-align: center;
-}
-
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
-}
-
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 500;
-}
-
-.intro p {
-  margin: 0 0 32px;
-}
-
-.skills-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #080208;
-  border: 1px solid #712073;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #fea18d;
+.newsletter > input {
+  background-color: #fff;
+  height: 31px;
   border-radius: 6px;
+  border: none;
+  width: 205px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.newsletter > button {
+  background-color:#e2494b;
+  width: 112px;
+  height: 43px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+
+}
+.red{
+	color: #e2494b;
+	margin-bottom: 10px;
+
+}
+.img{
+ height: 140px;
+  width: 550px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+	font: 16px "Georgia", sans-serif ;
+  color: #999999;
 }
 
-.portfolio {
-  margin: 0 0 120px;
+div.img > img {
+  margin-right: 20px;
+  margin-left: -20px;
 }
 
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.domen {
+  background-color: #c5c5c5;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.projects p {
-  margin: 0 0 24px;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #712073;
-  color: #ffffff;
-}
-
-.page-footer {
-  padding: 40px 0;
-  background-color: #260c26;
-}
-
-.page-footer a {
-  margin-left: 56px;
-  color: #fea18d;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email.svg");
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
+.domen > span {
+  display: block;
+  font-size: 12px;
+	font: 16px "Georgia", sans-serif ;
+  color: #999999;
+  line-height: 1.2;
+  flex-grow: 1;
 }
